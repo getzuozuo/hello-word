@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <title>字符串位置方法</title> 
+  </head> 
+  <body> 
+  <script type="text/javascript"> 
+    /* 
+    indexOf方法和lastIndexOf方法都是从一个字符串中搜索给定的子字符串，然后返回子字符串的位置，如果没有找到，则返回-1 
+    indexOf方法是从字符串的开头向后搜索子字符串，lastIndexOf方法正好相反 
+    这两个方法都可以接收两个参数：要查找的子字符串和查找的位置 
+     */
+    var str="hello world"; 
+    console.log(str.indexOf("o"));//4 
+    console.log(str.lastIndexOf("o"));//7 
+    console.log(str.indexOf("o",6));//7 
+    console.log(str.lastIndexOf("o",6));//4 
+  </script> 
+  </body> 
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <title>split方法</title> 
+  </head> 
+  <body> 
+  <script type="text/javascript"> 
+  /* 
+  split方法是基于指定的字符，将字符串分割成字符串数组 
+  当指定的字符为空字符串时，将会分隔整个字符串 
+   */ 
+    var str="red,blue,green,yellow"; 
+    console.log(str.split(","));//["red", "blue", "green", "yellow"] 
+    console.log(str.split(",",2));//["red", "blue"]  第二个参数用来限制数组大小 
+    console.log(str.split(/[^\,]+/));// ["", ",", ",", ",", ""] 
+    //第一项和最后一项为空字符串是因为正则表达式指定的分隔符出现在了子字符串的开头，即"red"和"yellow" 
+    //[^...] 不在方括号内的任意字符  只要不是逗号都是分隔符 
+  </script> 
+  </body> 
+</html> 

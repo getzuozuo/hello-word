@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <title>replace方法（替换字符串）</title> 
+  </head> 
+  <body> 
+  <script type="text/javascript"> 
+    var str="cat,bat,sat,fat"; 
+    var res=str.replace("at","one");//第一个参数是字符串，所以只会替换第一个子字符串 
+    console.log(res);//cone,bat,sat,fat 
+    
+ 
+    var res1=str.replace(/at/g,"one");//第一个参数是正则表达式，所以会替换所有的子字符串 
+    console.log(res1);//cone,bone,sone,fone 
+  </script> 
+  </body> 
+</html> 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  下表中列举了在字符串中可以使用转义字符转义的特殊字符：
+  
+代码	输出
+\'	单引号
+\"	双引号
+\\	反斜杠
+\n	换行
+\r	回车
+\t	tab(制表符)
+\b	退格符
+\f	换页符
+String 对象属性
+constructor	对创建该对象的函数的引用
+length	字符串的长度
+prototype	允许您向对象添加属性和方法
+
+String 对象方法
+charAt()	返回指定索引位置的字符
+<br>
+charCodeAt()	返回指定索引位置字符的 Unicode 值
+<br>
+concat()	连接两个或多个字符串，返回连接后的字符串
+<br>
+fromCharCode()	将 Unicode 转换为字符串
+<br>
+indexOf()	返回字符串中检索指定字符第一次出现的位置
+<br>
+lastIndexOf()	返回字符串中检索指定字符最后一次出现的位置
+<br>
+localeCompare()	用本地特定的顺序来比较两个字符串
+<br>
+match()	找到一个或多个正则表达式的匹配
+<br>
+replace()	替换与正则表达式匹配的子串
+<br>
+search()	检索与正则表达式相匹配的值
+<br>
+slice()	提取字符串的片断，并在新的字符串中返回被提取的部分
+<br>
+split()	把字符串分割为子字符串数组
+<br>
+substr()	从起始索引号提取字符串中指定数目的字符
+<br>
+substring()	提取字符串中两个指定的索引号之间的字符
+<br>
+toLocaleLowerCase()	根据主机的语言环境把字符串转换为小写，只有几种语言（如土耳其语）具有地方特有的大小写映射
+<br>
+toLocaleUpperCase()	根据主机的语言环境把字符串转换为大写，只有几种语言（如土耳其语）具有地方特有的大小写映射
+<br>
+toLowerCase()	把字符串转换为小写
+<br>
+toString()	返回字符串对象值
+<br>
+toUpperCase()	把字符串转换为大写
+<br>
+trim()	移除字符串首尾空白
+<br>
+valueOf()	返回某个字符串对象的原始值
+<br>
+</body>
+<script>
+  // String 对象属性
+  // 字符串长度
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+console.log(sln);
+
+// 字符串对象
+var x = "John";
+var y = new String("John");
+typeof x // 返回 String
+typeof y // 返回 Object
+
+// charAt()	返回指定索引位置的字符
+// 定义和用法
+// charAt() 方法可返回指定位置的字符。
+// 第一个字符位置为 0, 第二个字符位置为 1,以此类推.
+var str = "HELLOWORLD";
+var n = str.charAt(5)
+console.log(n); // M
+
+
+var str = "HELLO WORLD";
+var n = str.charCodeAt(0);
+// 定义和用法
+// charCodeAt() 方法可返回指定位置的字符的 Unicode 编码，返回值是 0 - 65535 之间的整数，表示给定索引处的 UTF-16 代码单元。
+
+// 字符串中第一个字符的位置为 0， 第二个字符位置为 1，以此类推。
+
+var str="hello "; 
+var res=str.concat("world"); 
+console.log(res);//hello world 
+console.log(str);//hello  这说明原来字符串的值没有改变 
+var res1=str.concat("nihao","!"); 
+console.log(res1);//hello nihao!  说明concat方法可以接收任意多个参数 
+//虽然concat方法是专门用来拼接字符串的，但是实践中我们使用最多的还是加操作符+，因为其简易便行 
+
+
+</script>
+</html>
